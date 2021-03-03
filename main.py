@@ -12,13 +12,30 @@ if (i == 10):
     # it is true 
     if (i < 12): 
         print ("i is smaller than 12 too")
-        if True:
+        if (i < 12):
             print("3rd level if")
+        
+            if (i < 12): 
+                print ("i is smaller than 12 too")
+                if (i < 12):
+                    print("3rd level if")
+                else:
+                    print("3rd level else")
+                    if (i < 12):
+                        print("4th level if")
+                        if (i < 12):
+                            print("5th level if")
+                        else:
+                            print("5th level else")
+                    else:
+                        print("4th level else")
+            else: 
+                print ("i is greater than 15")
         else:
             print("3rd level else")
-            if False:
+            if (i < 12):
                 print("4th level if")
-                if True:
+                if (i < 12):
                     print("5th level if")
                 else:
                     print("5th level else")
